@@ -1,5 +1,5 @@
 # CMSIS-DSPの導入
-
+https://ioloa.com/blog/archives/81
 ## 手始め
 まずは、STM32CubeIDEを入れておく
 
@@ -16,8 +16,7 @@ Cドライブ(OSとかが保存されているところ)の中にある "users" 
 
 (もし、見つからない場合はSTM32CubeIDEで新しいプロジェクトを作るとダウンロードが行われる)
 
-
- "STM32Cube" → "Repository" を開く
+"STM32Cube" → "Repository" を開く
 
 ### "Repository" の中に "STM32Cube_FW_G4_V1.6.0" が無い場合
 (Vの後の数字はバージョンによるので同じでなくてもいい)
@@ -25,7 +24,7 @@ Cドライブ(OSとかが保存されているところ)の中にある "users" 
 https://www.st.com/ja/embedded-software/stm32cubeg4.html
 から "STM32Cube MCU Package for STM32G4 series" をインストールし
 
-"C:\Users\(名前)\STM32Cube\Repository" の中に展開する
+ "C:\Users\(名前)\STM32Cube\Repository" の中に展開する
 
 ## "math.lib" と "math.a"
 
