@@ -23,16 +23,18 @@ Cドライブ(OSとかが保存されているところ)の中にある "users" 
 (Vの後の数字はバージョンによるので同じでなくてもいい)
 
 https://www.st.com/ja/embedded-software/stm32cubeg4.html
-から "STM32Cube MCU Package for STM32G4 series" をインストールし 
+から "STM32Cube MCU Package for STM32G4 series" をインストールし
+
 "C:\Users\(名前)\STM32Cube\Repository" の中に展開する
 
-## 移動する
+## "math.lib" と "math.a"
 
 " ... \Repository\STM32Cube_FW_G4_V1.6.0\Drivers\CMSIS\DSP\Lib" 
 
 "STM32Cube_FW_G4_V1.6.0" → "Drivers" → "CMSIS" → "DSP" → "Lib" を開く
 
-"Lib" の中にある "ARM" フォルダから "arm_cortexM4lf_math.lib" , 
+"Lib" の中にある "ARM" フォルダから "arm_cortexM4lf_math.lib" をコピー
+
 "GCC" フォルダから "libarm_cortexM4lf_math.a" をコピーする
 
 "C:\Users\(名前)\STM32CubeIDE\workspace_1.16.1\(プロジェクト名)"
@@ -41,13 +43,15 @@ https://www.st.com/ja/embedded-software/stm32cubeg4.html
 
 "STM32CubeIDE" の中にある "workspace_1.16.1" (数字はバージョンによるので使用しているバージョンのファイル)の中にある "(使用したいプロジェクトフォルダ)" に貼り付ける
 
+## ".h" ヘッダーファイル
+
 " ... \Repository\STM32Cube_FW_G4_V1.6.0\Drivers\CMSIS\DSP\Include"
 
 同様に "Include"を開き、"Include" の中にある全てをコピーし
 
 "C:\Users\(名前)\STM32CubeIDE\workspace_1.16.1\(プロジェクト名)\Core\Inc"
 
-"(使用したいプロジェクトフォルダ)" → "Core" → "Inc" を開き貼り付ける
+"(使用したいプロジェクトフォルダ)" → "Core" → "Inc" を開き、貼り付ける
 
 ## アプリの設定
 
@@ -59,6 +63,7 @@ STM32CubeIDEアプリケーションでCMSIS-DSPを使用したいプロジェ�
 
 "Library search path (-L)" の右にある + (add) → "Workspace..." から使用したいプロジェクトを選択する　"${workspace_loc:/${ProjName}}" となっていればよい　
 
+## 使用してみる
 使用したいファイルで
 
 #define ARM_MATH_CM4
