@@ -60,7 +60,9 @@ STM32CubeIDEアプリケーションでCMSIS-DSPを使用したいプロジェ�
 
 "Libraries (-l)" の右にある + (add) を押して "arm_cortexM4lf_math" を入力する
 
-"Library search path (-L)" の右にある + (add) → "Workspace..." から使用したいプロジェクトを選択する　"${workspace_loc:/${ProjName}}" となっていればよい　
+"Library search path (-L)" の右にある + (add) → "Workspace..." から使用したいプロジェクトを選択する　
+
+"${workspace_loc:/${ProjName}}" となっていればよい　
 
 ## 使用してみる
 使用したいファイルで
@@ -72,9 +74,3 @@ STM32CubeIDEアプリケーションでCMSIS-DSPを使用したいプロジェ�
 #include "arm_const_structs.h"
 
 をインクルードすると使用できる
-
-
-
-[次のページ](01_環境構築.md)
-
-[STM32-メニュー](index.md)
